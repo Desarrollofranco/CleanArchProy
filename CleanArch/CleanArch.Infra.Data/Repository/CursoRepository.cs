@@ -9,7 +9,7 @@ namespace CleanArch.Infra.Data.Repository
 {
     public class CursoRepository : ICursoRepository
     {
-        private UniversidadDbContext _universidadDbContext;
+        private readonly UniversidadDbContext _universidadDbContext;
         public CursoRepository(UniversidadDbContext universidadDbContext)
         {
             _universidadDbContext = universidadDbContext;

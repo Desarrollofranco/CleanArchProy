@@ -9,7 +9,7 @@ namespace CleanArch.Application.Services
 {
     public class CursoService : ICursoService
     {
-        private ICursoRepository _cursoRepository;
+        private readonly ICursoRepository _cursoRepository;
         public CursoService(ICursoRepository cursoRepository)
         {
             _cursoRepository = cursoRepository;
